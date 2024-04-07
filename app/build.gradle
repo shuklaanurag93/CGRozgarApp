@@ -1,0 +1,57 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.cgemployment.cge_rozgarapp'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.cgemployment.cge_rozgarapp"
+        minSdk 26
+        targetSdk 34
+        versionCode 3
+        versionName "1.0.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation "com.github.skydoves:powerspinner:1.2.4"
+    implementation 'io.github.chaosleung:pinview:1.4.4'
+    implementation "androidx.biometric:biometric:1.1.0"
+    implementation 'com.karumi:dexter:6.2.2'
+    implementation 'com.android.volley:volley:1.2.1'
+    implementation 'com.github.smarteist:autoimageslider:1.4.0'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+    implementation 'com.jpardogo.googleprogressbar:library:1.2.0'
+    implementation 'com.google.android.gms:play-services-vision:17.0.2'
+    implementation 'com.google.android.gms:play-services-safetynet:18.0.1'
+    implementation 'androidx.security:security-crypto:1.0.0-alpha02'
+
+
+}

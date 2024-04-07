@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black2">#585858</color>
+    <color name="black">#192a56</color>
+    <color name="black3">#192a56</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#80ffffff</color>
+    <color name="bluenew">#08669a</color>
+    <color name="bluenew2">#7a4cc3</color>
+    <color name="blue">#FFA992</color>
+    <color name="txtcolor">#80000000</color>
+    <color name="blue2">#839fc4</color>
+    <color name="blue3"> #1e90ff</color>
+    <color name="blue4">#192a56</color>
+    <color name="gold2">#FBC02D</color>
+    <color name="gold">#E4A11B</color>
+    <color name="lightyellow"> #FFFBC8</color>
+    <color name="lightpink"> #FFDBE9</color>
+    <color name="powerspinner_scrollbar">#08669a</color>
+    <color name="red">#c23616</color>
+    <color name="red2">#fc0005</color>
+    <color name="red3">#dc3545</color>
+    <color name="blue5">#08669a</color>
+    <color name="niclogocolor">#2483C5</color>
+    <color name="green2">#319703</color>
+    <color name="green">#02e272</color>
+    <color name="Success">#5cb85c</color>
+    <color name="Danger">#d9534f</color>
+    <color name="newcolor">#FFBD83</color>
+    <color name="mtrl_textinput_default_box_stroke_color" >#192a56</color>
+</resources>

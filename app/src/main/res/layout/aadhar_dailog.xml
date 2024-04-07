@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="10dp"
+    android:elevation="12dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:includeFontPadding="false"
+                android:text="प्रमाणीकरण सहमति"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:text="मैं यहां कहता हूं कि मुझे आधार आधारित प्रमाणीकरण प्रणाली के साथ खुद को प्रमाणित करने में कोई आपत्ति नहीं है और मैं रोजगार संचालनालय, छत्तीसगढ़ द्वारा किये जाने वाले रोजगार इच्छुक पंजीकरण का लाभ उठाने के प्रयोजनों के लिए आधार आधारित प्रमाणीकरण के लिए अपना आधार नंबर, बायोमेट्रिक और/या वन टाइम पिन (ओटीपी) डेटा प्रदान करने के लिए सहमति देता हूं। "
+                android:textColor="@color/black3"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:text="मैं समझता हूं कि प्रमाणीकरण के लिए मैं जो बायोमेट्रिक्स और/या ओटीपी प्रदान करता हूं उसका उपयोग केवल उस विशिष्ट लेनदेन के लिए आधार प्रमाणीकरण प्रणाली के माध्यम से मेरी पहचान प्रमाणित करने के लिए किया जाएगा और किसी अन्य उद्देश्य के लिए नहीं किया जाएगा।"
+                android:textColor="@color/black3"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:includeFontPadding="false"
+                android:text="मैं समझता हूं कि रोजगार संचालनालय, छत्तीसगढ़ आधार आधारित प्रमाणीकरण के उद्देश्य से प्रदान किए गए मेरे व्यक्तिगत पहचान डेटा की सुरक्षा और गोपनीयता सुनिश्चित करेगा।"
+                android:textColor="@color/black3"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/retry_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="50dp"
+                android:background="@drawable/newbg1"
+                android:text="सहमत हैं"
+                android:textColor="@color/white"
+                android:textStyle="bold">
+
+            </androidx.appcompat.widget.AppCompatButton>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.cardview.widget.CardView>

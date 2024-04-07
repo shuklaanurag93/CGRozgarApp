@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutDialogContainer"
+    android:layout_margin="20dp"
+    android:padding="20dp"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/dialog_background"
+        tools:layout_editor_absoluteX="20dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:background="@drawable/warning_background"
+            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="warning"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageIcon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/cata"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/app_name"
+            app:tint="@color/white" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/textMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="18sp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="40dp"
+            android:text="jhdkfdn"
+            android:textColor="@color/black3"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textTitle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/buttonNo"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/button_neutral_background"
+                android:textColor="@color/white"
+                android:text="no"
+                android:textSize="14sp"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:id="@+id/buttonYes"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="40dp"
+                android:background="@drawable/button_warning_background"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:text="yes"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

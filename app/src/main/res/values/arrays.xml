@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string-array name="disabilityType">
+        <item>दृष्टि संबंधित</item>
+        <item>श्रवण संबंधित</item>
+        <item>अस्थि संबंधित</item>
+        <item>वाक संबंधित</item>
+        <item>बहु निशक्तता संबंधित</item>
+
+
+
+
+    </string-array>
+
+
+
+</resources>

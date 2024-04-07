@@ -1,0 +1,1995 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbg3"
+    android:orientation="vertical"
+    tools:context=".registration_form">
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/tv_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#8cffffff"
+            android:padding="20dp"
+            android:text="नोट:- फोटो खीचने के लिये कृपया 4 बार पलके झपकिये"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/notemsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8cffffff"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="नोट:- फोटो खीचने के लिये कृपया 4 बार पलके झपके"
+                android:textColor="#ff0000"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/blinkCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#8cffffff"
+                android:gravity="center"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+
+                />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/back_Reg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                app:tint="@color/white">
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="डैशबोर्ड"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/briefcase">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="रोज़गार पंजीयन फार्म"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Refresh_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/forground"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/forground2"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/info"
+                        app:tint="@color/white">
+
+                    </ImageView>
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="रोज़गार पंजीयन फार्म"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="5dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/reg_form_llA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/adhll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/aadhar_tv_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginRight="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="आवेदक का आधार नंबर (*)"
+                                android:textColorHint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/black"
+                                app:hintTextColor="@color/black"
+                                app:startIconDrawable="@drawable/acard"
+                                app:startIconTint="@color/black"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/adhar_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:inputType="number"
+                                    android:maxLength="12"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <CheckBox
+                                android:id="@+id/Aadhardeclaration_checkbox"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="20dp"
+                                android:buttonTint="@color/black"
+                                android:onClick="Check_checkBox"
+                                android:text="आधार प्रमाणीकरण सहमति लिंक चेक करें |"
+                                android:textColor="@color/blue3"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:id="@+id/btn_aadhar_otp"
+                                android:layout_width="230dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="30dp"
+                                android:background="@drawable/login_btn"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ओटीपी प्राप्त करें"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/Aadhar_Otp_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/otp_txt_msg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:text="आधार से लिंक मोबाइल नंबर में प्राप्त ओटीपी दर्ज करें.."
+                                android:textColor="@color/blue4"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/otp_res"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:text=""
+                                android:textColor="@color/blue4" />
+
+                            <com.chaos.view.PinView
+                                android:id="@+id/PinViewAadharOTP"
+                                style="@style/PinWidget.PinView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:cursorVisible="true"
+                                android:hint="OTPOTP"
+                                android:inputType="number"
+                                android:padding="10dp"
+                                android:textColor="@color/blue4"
+                                android:textColorHint="@color/blue4"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                app:cursorColor="@color/blue4"
+                                app:cursorWidth="1dp"
+                                app:hideLineWhenFilled="false"
+                                app:itemCount="6"
+                                app:itemHeight="48dp"
+                                app:itemRadius="5dp"
+                                app:itemSpacing="10dp"
+                                app:itemWidth="45dp"
+                                app:lineColor="@color/blue4"
+                                app:lineWidth="1dp"
+                                app:viewType="rectangle" />
+
+                            <LinearLayout
+                                android:id="@+id/Aadhar_Otp_submit"
+                                android:layout_width="230dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="30dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/login_btn"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ओटीपी सबमिट करें"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/reg_form_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/username_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="नाम (आधार कार्ड के अनुसार अंग्रेज़ी में) (*)"
+                                android:textColorHint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/black"
+                                app:hintTextColor="@color/black"
+                                app:startIconDrawable="@drawable/name"
+                                app:startIconTint="@color/black"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/username_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:enabled="false"
+                                    android:focusableInTouchMode="true"
+                                    android:inputType="text"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/mobile_tv_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="मोबाइल नंबर (*) "
+                                android:textColorHint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/black"
+                                app:hintTextColor="@color/black"
+                                app:startIconDrawable="@drawable/phone"
+                                app:startIconTint="@color/black"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/mobile_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:enabled="false"
+                                    android:inputType="phone"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/cata"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="लिंग (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/gender_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/gender_M"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="पुरुष"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/gender_F"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="महिला"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/gender_T"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="ट्रांसजेंडर"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/married"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="वैवाहिक स्थिति (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/married_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/married"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="विवाहित"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/unmarried"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="अविवाहित"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/fathers_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="पिता का नाम (अंग्रेज़ी में) (*)"
+                                android:textColorHint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/black"
+                                app:hintTextColor="@color/black"
+                                app:startIconDrawable="@drawable/name"
+                                app:startIconTint="@color/black"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/fathersname_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:focusableInTouchMode="true"
+                                    android:inputType="textCapCharacters"
+                                    android:maxLength="30"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/datepicker_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="जन्मतिथि (*)"
+                                android:textColorHint="@color/black"
+                                app:boxStrokeColor="@color/black"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/black"
+                                app:hintTextColor="@color/black"
+                                app:startIconDrawable="@drawable/date"
+                                app:startIconTint="@color/black"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/DOB_picker_actions"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:clickable="false"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:focusableInTouchMode="false"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/cata"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="वर्ग (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/caste_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/caste_Gen"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="General"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="13sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/caste_OBC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="OBC"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="13sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/caste_SC"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="SC"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="13sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/caste_ST"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="ST"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="13sp" />
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/pvtg_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/married"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="क्या PVTG वर्ग से है? (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/pvtg_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/pvtg_yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="हाँ"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/pvtg_no"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="नहीं"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/pvtg_cata_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="48dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:src="@drawable/married"
+                                    app:tint="@color/black">
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="PVTG का प्रकार (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/pvtgsp_sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:hint="चुने "
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/oversease"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text=" क्या प्रवासी नौकरी में रूचि है? (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/oversease_group"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="end"
+                                    android:orientation="horizontal">
+
+                                    <RadioButton
+                                        android:id="@+id/oversease_Yes"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="हाँ"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                    <RadioButton
+                                        android:id="@+id/oversease_NO"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:buttonTint="@color/blue4"
+                                        android:onClick="onRadioButtonClicked"
+                                        android:text="नहीं"
+                                        android:textColor="@color/blue4"
+                                        android:textSize="14sp" />
+
+                                </RadioGroup>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:id="@+id/next_btn"
+                                android:layout_width="230dp"
+                                android:layout_height="45dp"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginBottom="10dp"
+                                android:background="@drawable/login_btn"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="अगला"
+                                    android:textColor="@color/white"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="40dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/reg_form_llB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="30dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/married"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="दिव्यांग (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/disability_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/disability_Yes"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:text="हाँ"
+                                    android:textColor="@color/blue4"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/disability_NO"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:text="नहीं"
+                                    android:textColor="@color/blue4"
+                                    android:textSize="14sp" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/disability_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:src="@drawable/wheelchair"
+                                app:tint="@color/black">
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="दिव्यांगता का प्रकार (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/disability_sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने "
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Highest_Qualification_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/knowledge"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="उच्चतम योग्यता (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/Highest_Qualification_sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने "
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Subject_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/knowledge"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="विषय चुने (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/Subject_sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने"
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/StatusOf_job_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/suitcase"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="रोज़गार की स्थिति (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/StatusOf_job_Sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने "
+                                    android:padding="10dp"
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/income_tv_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:focusableInTouchMode="true"
+                            android:hint="मासिक आय (*) "
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="1dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconDrawable="@drawable/rupee"
+                            app:startIconTint="@color/black"
+                            tools:override="true">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/income_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:inputType="number"
+                                android:maxLength="7"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="3dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/attention"></ImageView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="नोट :- "
+                                android:textColor="@color/blue4"
+                                android:textSize="14sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text=" पता आधार कार्ड के अनुसार दर्ज करें |"
+                                android:textColor="@color/blue4"
+                                android:textSize="14sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/state_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/location"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="राज्य (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/state_Sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने "
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/Dist_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/location"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="जिला (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp">
+
+                                <Spinner
+                                    android:id="@+id/Dist_Sp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:gravity="start"
+                                    android:hint="चुने "
+                                    android:textColor="@color/blue"
+                                    android:textColorHint="@color/blue"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/urbanrul_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/married"
+                                android:tint="@color/black"
+
+                                >
+
+                            </ImageView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:text="ग्रामीण / शहरी (*)"
+                                android:textColor="@color/black"
+                                android:textSize="14.5sp">
+
+                            </TextView>
+
+                            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/ruralUrban_group"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/rural"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:text="ग्रामीण"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <RadioButton
+                                    android:id="@+id/urban"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:text="शहरी"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/urban_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/nagriynikay_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/location"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="नगरीय निकाय (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/nagrinikay_Sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:hint="चुने "
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ward_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/location"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="वार्ड (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/ward_ll_sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:padding="10dp"
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/rural_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:id="@+id/block_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/location"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ब्लॉक (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/block_Sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:hint="चुने "
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/panchayt_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/location"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ग्राम पंचायत (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/panchayt_Sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:hint="चुने "
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/gram_ll"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/bg2"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="25dp"
+                                    android:layout_height="30dp"
+                                    android:layout_marginLeft="5dp"
+                                    android:src="@drawable/location"
+                                    android:tint="@color/black"
+
+                                    >
+
+                                </ImageView>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:text="ग्राम (*)"
+                                    android:textColor="@color/black"
+                                    android:textSize="14.5sp">
+
+                                </TextView>
+
+                                <LinearLayout
+
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp">
+
+                                    <Spinner
+                                        android:id="@+id/gram_Sp"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="45dp"
+                                        android:gravity="start"
+                                        android:hint="चुने "
+                                        android:textColor="@color/blue"
+                                        android:textColorHint="@color/blue"
+                                        android:textSize="14sp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/Address_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:focusableInTouchMode="true"
+                            android:hint="पूर्ण पता (अंग्रेज़ी में) (*)"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="1dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconDrawable="@drawable/cata"
+                            app:startIconTint="@color/black"
+                            tools:override="true">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/Address_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusableInTouchMode="true"
+                                android:inputType="textCapCharacters"
+                                android:maxLength="200"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/pincode_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:focusableInTouchMode="true"
+                            android:hint="पिन कोड (*)"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="1dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconDrawable="@drawable/pen"
+                            app:startIconTint="@color/black"
+                            tools:override="true">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/pincode_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusableInTouchMode="true"
+                                android:inputType="number"
+                                android:maxLength="6"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/email_layout"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:focusableInTouchMode="true"
+                            android:hint="ई-मेल"
+                            android:textColorHint="@color/black"
+                            app:boxStrokeColor="@color/black"
+                            app:boxStrokeWidthFocused="1dp"
+                            app:endIconMode="clear_text"
+                            app:endIconTint="@color/black"
+                            app:hintTextColor="@color/black"
+                            app:startIconDrawable="@drawable/pin"
+                            app:startIconTint="@color/black"
+                            tools:override="true">
+
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/email_tv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:focusableInTouchMode="true"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="200"
+                                android:textColor="@color/black"
+                                android:textCursorDrawable="@null" />
+
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:gravity="start"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/attention"></ImageView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="नोट :- "
+                                android:textColor="@color/blue4"
+                                android:textSize="14sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="आवेदक के दस्तावेजों को सत्यापन नियोक्ता द्वारा नियुक्ति के दौरान किया जावेगा। दस्तावेजों की जिम्मेदारी रोज़गार विभाग की नहीं होगी |"
+                                android:textColor="@color/blue4"
+                                android:textSize="14sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/declaration_checkbox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:buttonTint="@color/black"
+                            android:onClick="Check_checkBox"
+                            android:text="मैं घोषणा करता/करती हूँ कि मेरे द्वारा प्रविष्ट की गई समस्त जानकारी सही है तथा मुझे संज्ञान है कि मेरे द्वारा प्रदान की गई कोई भी जानकारी गलत पाई जाती है तो मेरा पंजीयन निरस्त किया जा सकता है।"
+                            android:textColor="@color/black"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+
+                        <LinearLayout
+                            android:id="@+id/click_photo_btn"
+                            android:layout_width="230dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/login_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="फोटो क्लिक करें"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/image_ll"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg2"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="आवेदक का फोटो"
+                                    android:textColor="@color/blue4"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold">
+
+                                </TextView>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/reclick"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/blue"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/reclick">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="फोटो पुनः खीचें "
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold">
+
+                                        </TextView>
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="end">
+
+                                    <LinearLayout
+                                        android:id="@+id/rotate"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:background="@color/blue"
+                                        android:gravity="center"
+                                        android:orientation="vertical"
+                                        android:padding="3dp">
+
+                                        <ImageView
+                                            android:layout_width="40dp"
+                                            android:layout_height="40dp"
+                                            android:src="@drawable/rotate">
+
+                                        </ImageView>
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="फोटो घुमाएँ"
+                                            android:textColor="@color/white"
+                                            android:textSize="16sp"
+                                            android:textStyle="bold">
+
+                                        </TextView>
+                                    </LinearLayout>
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <ImageView
+                                android:id="@+id/img"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:layout_marginTop="10dp">
+
+                            </ImageView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/submit_btn"
+                            android:layout_width="230dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/login_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="सबमिट करें"
+                                android:textColor="@color/white"
+                                android:textSize="16sp"
+                                android:textStyle="bold">
+
+                            </TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

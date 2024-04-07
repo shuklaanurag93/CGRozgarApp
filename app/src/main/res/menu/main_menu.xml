@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:icon="@drawable/home"
+            android:id="@+id/nav_home"
+            android:title="होम" />
+    </group>
+
+    <item android:title="अकाउंट"
+        >
+        <menu >
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:icon="@drawable/person"
+                    android:id="@+id/profile"
+                    android:title="प्रोफाइल" />
+
+                <item
+                    android:icon="@drawable/cata"
+                    android:id="@+id/xten"
+                    android:title="X-10 फॉर्म डाउनलोड करें" />
+                <item
+                    android:icon="@drawable/lock"
+                    android:id="@+id/nav_logout"
+                    android:title="लॉगआउट" />
+            </group>
+        </menu>
+    </item>
+    <item android:title="अन्य">
+        <menu >
+
+
+            <group android:checkableBehavior="none">
+                <item
+                    android:icon="@drawable/priv"
+                    android:id="@+id/nav_pp"
+                    android:title="गोपनीयता नीति" />
+
+                <item
+                    android:icon="@drawable/cata"
+                    android:id="@+id/gotoweb"
+                    android:title="विभाग के पोर्टल में जाए" />
+
+
+            </group>
+        </menu>
+    </item>
+</menu>

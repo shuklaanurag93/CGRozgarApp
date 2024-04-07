@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/imgbg3"
+    android:orientation="vertical"
+    tools:context=".FeedBack">
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/blue"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/feedback_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back"
+                app:tint="@color/white">
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="डैशबोर्ड"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/chat">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:text="फीडबैक"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:textStyle="bold">
+
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Refresh_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/forground"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/forground2"
+                android:padding="2dp">
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/info"
+                    app:tint="@color/white">
+
+                </ImageView>
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:text="फीडबैक"
+                    android:textColor="@color/white"
+                    android:textSize="16sp">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="16dp"
+                android:elevation="12dp"
+                android:layout_marginBottom="40dp"
+                app:cardCornerRadius="8dp"
+                android:layout_gravity="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="16dp"
+                                android:text="कृपया हमारा फीडबैक फॉर्म भरकर हमारी सेवाओं को बेहतर बनाने में हमारी मदद करें। धन्यवाद!"
+                                android:textColor="@color/black3"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="16dp"
+                                android:text="1) सेवाओं की आवश्यक आवश्यकताओं के पहलुओं में (सॉफ्टवेयर की रेटिंग)"
+                                android:textColor="@color/black3"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+                            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                                android:id="@+id/ratingOfSoftware"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <RadioButton
+                                    android:id="@+id/RA1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:layout_marginRight="10dp"
+                                    android:text="उत्कृष्ट"
+                                    android:textStyle="bold"
+                                    android:buttonTint="@color/blue4"
+                                    android:textColor="@color/green"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RA2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="बहुत अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/green2"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RA3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/gold"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RA4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/red"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RA5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="बहुत ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/red2"
+                                    android:textSize="14.5sp"  />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="16dp"
+                                android:text="2) आप इस सॉफ़्टवेयर के उपयोगकर्ता इंटरफ़ेस से कितने संतुष्ट हैं?"
+                                android:textColor="@color/black3"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+
+                            <RadioGroup
+                                android:id="@+id/ratingOfUseInterface"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <RadioButton
+                                    android:id="@+id/RB1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:buttonTint="@color/blue4"
+                                    android:text="उत्कृष्ट"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textColor="@color/green"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/RB2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:buttonTint="@color/blue4"
+                                    android:text="बहुत अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textColor="@color/green2"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/RB3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:buttonTint="@color/blue4"
+                                    android:text="अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textColor="@color/gold"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/RB4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:text="ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textColor="@color/red"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+
+                                <RadioButton
+                                    android:id="@+id/RB5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:buttonTint="@color/blue4"
+                                    android:text="बहुत ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textColor="@color/red2"
+                                    android:textSize="14.5sp"
+                                    android:textStyle="bold" />
+                            </RadioGroup>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="16dp"
+                                android:text="3) आप इस सॉफ़्टवेयर के उपयोग में आसानी से कितने संतुष्ट हैं?"
+                                android:textColor="@color/black3"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+                            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                               android:id="@+id/satisfied"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <RadioButton
+                                    android:id="@+id/RC1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="उत्कृष्ट"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:textStyle="bold"
+                                    android:buttonTint="@color/blue4"
+                                    android:textColor="@color/green"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RC2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="बहुत अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/green2"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RC3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="10dp"
+                                    android:text="अच्छा"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/gold"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RC4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/red"
+                                    android:textSize="14.5sp" />
+
+                                <RadioButton
+                                    android:id="@+id/RC5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="बहुत ख़राब"
+                                    android:onClick="onRadioButtonClicked"
+                                    android:buttonTint="@color/blue4"
+                                    android:textStyle="bold"
+                                    android:textColor="@color/red2"
+                                    android:textSize="14.5sp"  />
+                            </RadioGroup>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <TextView
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginTop="16dp"
+                                android:text="कृपया हमें इस सॉफ़्टवेयर के लिए यदि कोई सुझाव/सिफारिश हो तो बताएं।"
+                                android:textColor="@color/black3"
+                                android:textAllCaps="true"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                />
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/username_layout"
+                                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:focusableInTouchMode="true"
+                                android:hint="सुझाव/सिफारिश"
+                                android:textColorHint="@color/blue4"
+                                app:boxStrokeColor="@color/blue4"
+                                app:boxStrokeWidthFocused="1dp"
+                                app:endIconMode="clear_text"
+                                app:endIconTint="@color/blue4"
+                                android:textAllCaps="true"
+                                app:hintTextColor="@color/blue4"
+                                app:startIconDrawable="@drawable/cata"
+                                app:startIconTint="@color/blue4"
+                                tools:override="true">
+
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/feedback_tv"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:focusableInTouchMode="true"
+                                    android:inputType="textCapCharacters"
+                                    android:textAllCaps="true"
+                                    android:maxLength="200"
+                                    android:textColor="@color/black"
+                                    android:textCursorDrawable="@null" />
+
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/msg_lla"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:textColor="@color/blue4"
+                            android:text=""
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/submit_feedback"
+                            android:layout_width="230dp"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginBottom="40dp"
+                            android:background="@drawable/login_btn"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="सबमिट करें"
+                                android:textStyle="bold"
+                                android:textColor="@color/white"
+                                android:textSize="16sp">
+
+                            </TextView>
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
