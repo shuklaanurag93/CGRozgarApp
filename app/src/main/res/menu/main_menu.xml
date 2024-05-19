@@ -18,9 +18,15 @@
                     android:title="प्रोफाइल" />
 
                 <item
-                    android:icon="@drawable/cata"
+                    android:icon="@drawable/download"
                     android:id="@+id/xten"
                     android:title="X-10 फॉर्म डाउनलोड करें" />
+
+                <item
+                    android:icon="@drawable/chat"
+                    android:id="@+id/feedback"
+                    android:title="फीडबैक" />
+
                 <item
                     android:icon="@drawable/lock"
                     android:id="@+id/nav_logout"
@@ -39,7 +45,7 @@
                     android:title="गोपनीयता नीति" />
 
                 <item
-                    android:icon="@drawable/cata"
+                    android:icon="@drawable/cursor"
                     android:id="@+id/gotoweb"
                     android:title="विभाग के पोर्टल में जाए" />
 

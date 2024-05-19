@@ -67,10 +67,11 @@ public class dashboard extends AppCompatActivity {
     LinearLayout btn_registration;
     LinearLayout job_renewal, btn_rojgar_alert;
     TextView txtname, txtmobile;
-    LinearLayout log_out_sv_db, feedback;
-    CardView registration_card, renewal_card;
+    LinearLayout log_out_sv_db;
+    CardView registration_card, renewal_card ,Edit_card;
     Dialog dialog;
     TextView lost_login_tv;
+    LinearLayout application_edit;
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
@@ -86,10 +87,11 @@ public class dashboard extends AppCompatActivity {
         txtname = findViewById(R.id.txtname);
         txtmobile = findViewById(R.id.txtmobile);
         log_out_sv_db = findViewById(R.id.log_out_sv_db);
-        feedback = findViewById(R.id.feedback);
         registration_card = findViewById(R.id.registration_card);
+        Edit_card = findViewById(R.id.Edit_card);
         renewal_card = findViewById(R.id.renewal_card);
         lost_login_tv = findViewById(R.id.lost_login_tv);
+        application_edit = findViewById(R.id.application_edit);
 
 
       // AllCertificatesAndHostsTruster.apply();
@@ -113,6 +115,7 @@ public class dashboard extends AppCompatActivity {
 
         registration_card.setVisibility(View.GONE);
         renewal_card.setVisibility(View.GONE);
+        Edit_card.setVisibility(View.GONE);
 
         ErojgarAppTileActiveAndDeactives();
         GetLastLoginTime();
@@ -189,6 +192,16 @@ public class dashboard extends AppCompatActivity {
             }
         });
 
+        application_edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                startActivity(new Intent(getApplicationContext(), application_edit.class));
+                finish();
+
+            }
+        });
+
         navigationDrawer();
 
         navigationDrawer();
@@ -211,14 +224,6 @@ public class dashboard extends AppCompatActivity {
         // to start autocycle below method is used.
         sliderView.startAutoCycle();
 
-        feedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                startActivity(new Intent(getApplicationContext(), FeedBack.class));
-                finish();
-            }
-        });
 
     }
 
@@ -260,6 +265,13 @@ public class dashboard extends AppCompatActivity {
                 Intent profile = new Intent(getApplicationContext(), profile.class);
                 startActivity(profile);
                 break;
+
+
+            case R.id.feedback:
+                Intent feedback = new Intent(getApplicationContext(), FeedBack.class);
+                startActivity(feedback);
+                break;
+
             case R.id.nav_pp:
                 String priURL = Constants_URL.PrivacyPolicy;
 
@@ -272,6 +284,7 @@ public class dashboard extends AppCompatActivity {
 
                 Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(portlURL));
                 startActivity(intent1);
+              //  finish();
 
                 break;
 
@@ -342,9 +355,11 @@ public class dashboard extends AppCompatActivity {
 
                                 if (_registrationTileFlage.equals("true")) {
                                     registration_card.setVisibility(View.VISIBLE);
+                                    Edit_card.setVisibility(View.VISIBLE);
 
                                 } else {
                                     registration_card.setVisibility(View.GONE);
+                                    Edit_card.setVisibility(View.GONE);
                                 }
                                 if (_renewalTileFlag.equals("true")) {
                                     renewal_card.setVisibility(View.VISIBLE);

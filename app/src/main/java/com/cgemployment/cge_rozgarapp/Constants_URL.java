@@ -41,6 +41,7 @@ public class Constants_URL {
     public static final  String InserTLogin="https://erojgar.cg.gov.in/APP-API/api/LastLogin/InserTLogin";
     public static final  String GetLastLoginTime="https://erojgar.cg.gov.in/APP-API/api/LastLogin/GetLastLoginTime";
     public static final  String GenerateToken="https://erojgar.cg.gov.in/APP-API/api/Login/GenerateToken";
+    public static final  String GetCandidateDetailsForApplicationEdit="https://erojgar.cg.gov.in/APP-API/api/CandidateRegistration/CheckCandidateEditableAndNot";
 
 
 
